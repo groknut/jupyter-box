@@ -1,8 +1,9 @@
 
-## Запуск Jupyter Notebook внутри Github Codespace
+## Jupyter-box
 
-Содержимое `Dockerfile`
+Запуск Jupyter Notebook внутри Github Codespace.
 
+Содержимое `Dockerfile`:
 ```Dockerfile
 FROM python:3.11-slim
 RUN pip install jupyter jupyterlab pandas numpy
