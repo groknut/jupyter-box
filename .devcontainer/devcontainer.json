@@ -1,0 +1,27 @@
+
+
+{
+  "name": "lab",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "forwardPorts": [8888],
+  "portsAttributes": {
+    "8888": {
+      "label": "Jupyter Lab",
+      "onAutoForward": "notify"
+    }
+  },
+  "postCreateCommand": "jupyter server --ServerApp.token='' --ServerApp.password='' &",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "jupyter.notebookFileRoot": "/workspace"
+      },
+      "extensions": [
+        "ms-toolsai.jupyter",
+        "ms-python.python"
+      ]
+    }
+  }
+}
