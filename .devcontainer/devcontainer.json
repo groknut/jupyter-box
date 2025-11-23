@@ -12,7 +12,7 @@
       "onAutoForward": "notify"
     }
   },
-  "postCreateCommand": "jupyter server --ServerApp.token='' --ServerApp.password='' &",
+
   "customizations": {
     "vscode": {
       "settings": {
